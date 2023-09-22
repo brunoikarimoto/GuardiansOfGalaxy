@@ -1,0 +1,26 @@
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+main div.btn_scroll {
+  display: flex;
+  column-gap: 12px;
+  align-items: center;
+}
+
+main div button {
+  background-color: transparent;
+  border: 1px solid var(--text);
+  height: 40px;
+  width: 40px;
+  border-radius: 100%;
+  color: var(--text);
+  transition: opacity 0.4s;
+  cursor: pointer;
+}
+
+main button:disabled {
+  opacity: 0.4;
+}

@@ -1,0 +1,44 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.btn_menu {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  row-gap: 8px;
+
+  z-index: 10;
+
+  border: 0;
+  background-color: transparent;
+}
+
+.btn_menu:hover {
+  cursor: pointer;
+}
+
+.btn_menu span {
+  height: 2px;
+  background: var(--text);
+  border-radius: 8px;
+  transition: all 0.4s;
+  width: 32px;
+}
+
+.btn_menu.active span:nth-child(2) {
+  opacity: 0;
+  width: 0px;
+}
+
+.btn_menu.active span:nth-child(1) {
+  width: 32px;
+  transform: rotate(-45deg) translate(-7px, 5px);
+}
+
+.btn_menu.active span:nth-child(3) {
+  width: 32px;
+  transform: rotate(45deg) translate(-8px, -7px);
+}
